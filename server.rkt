@@ -16,7 +16,7 @@
 ; Route requests to mapped controller functions.
 (define-values (app-dispatch app-url)
   (dispatch-rules
-    [("") list-jobs]))
+    [("/") list-jobs]))
 
 (define (list-jobs req)
   (response/xexpr
